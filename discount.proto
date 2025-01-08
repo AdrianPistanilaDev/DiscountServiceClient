@@ -1,0 +1,31 @@
+﻿syntax = "proto3";
+
+package discount;
+
+// The Discount service definition.
+service DiscountService {
+  rpc GenerateDiscountCodes(GenerateCodeRequest) returns (GenerateCodesResponse);
+  rpc UseDiscountCode(UseDiscountCodeRequest) returns (UseDiscountCodeResponse);
+}
+
+// Request to generate discount codes.
+message GenerateCodeRequest {
+  uint32 count = 1; // Number of codes to generate (max 2000).
+  uint32 length = 2; // Length of each code (7-8 characters).
+}
+
+// Response containing generated discount codes.
+message GenerateCodesResponse {
+  bool success = 1; // Indicates success of the request.
+  repeated string codes = 2; // The generated discount codes.
+}
+
+// Request to use a discount code.
+message UseDiscountCodeRequest {
+  string code = 1; // The discount code to use.
+}
+
+// Response for using a discount code.
+message UseDiscountCodeResponse {
+  uint32 status = 1; // Status: 0 = success, 1 = already used, 2 = invalid code.
+}
