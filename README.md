@@ -7,7 +7,7 @@ The client can interact with the server to:
 ## Building and Running the gRPC client
 
 Requirements:
-- Running the gRPC DiscountService server on port 5000
+Running the gRPC DiscountService server on port 5000
 
 **Clone the Repository:**  
 git clone https://github.com/AdrianPistanilaDev/DiscountServiceClient.git  
