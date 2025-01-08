@@ -1,13 +1,13 @@
 # Discount Service gRPC client for testing the gRPC service
 
 The client can interact with the server to:
-*Generate discount codes.
-*Use a discount code.
+- Generate discount codes.
+- Use a discount code.
 
 ## Building and Running the gRPC client
 
 Requirements:
-*Running the gRPC DiscountService server on port 5000
+- Running the gRPC DiscountService server on port 5000
 
 Clone the Repository:
 git clone cd DiscountServiceClient
