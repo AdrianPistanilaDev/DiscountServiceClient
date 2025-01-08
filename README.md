@@ -10,7 +10,7 @@ Requirements:
 - Running the gRPC DiscountService server on port 5000
 
 Clone the Repository:
-git clone https://github.com/AdrianPistanilaDev/DiscountServiceClient.git
+git clone https://github.com/AdrianPistanilaDev/DiscountServiceClient.git <br>
 cd DiscountServiceClient
 
 Restore Dependencies:
